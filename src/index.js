@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
   res.send(
-    '<h2> The dialog Slash Command app is running</h2> <p> Follow the instructions in the README to configure the Slack App and your enviroment variables.</p>'
+    '<h2> The dialog Slash Command app is running</h2> <p> Follow the instructions in the README to configure the Slack App and your env variables.</p>'
   )
 })
 
