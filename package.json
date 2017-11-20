@@ -7,7 +7,8 @@
   "license": "No",
   "private": true,
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "babel src/index.js -d lib"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -16,6 +17,9 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-generator-functions": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "prettier": "1.8.2"
   }
 }
