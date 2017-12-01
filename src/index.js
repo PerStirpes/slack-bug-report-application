@@ -75,6 +75,7 @@ app.post('/slack/events/components', (req, res) => {
   }
 })
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, (err) => {
+  if (err) throw err
   console.log(`App listening on port ${process.env.PORT}`)
 })
